@@ -81,7 +81,7 @@ t1 = BigQueryOperator(
     GROUP BY
       date,
       repo
-    ''',    destination_dataset_table='gagan-sb.github_trends.github_daily_metrics${{ yesterday_ds_nodash }}',
+    ''',    destination_dataset_table='sandbox-devops-104342.github_trends.github_daily_metrics${{ yesterday_ds_nodash }}',
     dag=dag)
 
 t1.set_upstream(t0)
